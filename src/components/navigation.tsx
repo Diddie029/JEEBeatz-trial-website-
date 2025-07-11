@@ -46,9 +46,11 @@ export function Navigation() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button className="neon-button">
-              Login
-            </Button>
+            <Link to="/login">
+              <Button className="neon-button">
+                Login
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -81,9 +83,11 @@ export function Navigation() {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full neon-button">
-                  Login
-                </Button>
+                <Link to="/login" className="block">
+                  <Button className="w-full neon-button">
+                    Login
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
